@@ -27,22 +27,8 @@
             >;
         };
 
+
         lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            bindings = <
-&kp TAB    &trans  &trans    &kp UP_ARROW  &trans     &trans       &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &bt BT_SEL 0  &kp BSPC
-&trans     &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans       &trans     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &bt BT_SEL 1  &trans
-&kp LSHFT  &trans  &trans    &trans        &trans     &trans       &trans     &kp N7        &kp N8        &kp N9        &bt BT_SEL 2  &bt BT_CLR
-                             &kp LGUI      &trans     &kp ENTER    &kp SPACE  &trans        &kp RALT
-            >;
-        };
-
-        raise_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -54,6 +40,21 @@
 &kp LCTRL  &kp F1    &kp F2  &kp F3    &kp F4    &kp F5       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &kp F6    &kp F7  &kp F8    &kp F9    &kp F10      &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+            >;
+        };
+
+        raise_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            bindings = <
+&kp TAB    &trans  &trans    &kp UP_ARROW  &trans     &trans       &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &bt BT_SEL 0  &kp BSPC
+&trans     &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans       &trans     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &bt BT_SEL 1  &trans
+&kp LSHFT  &trans  &trans    &trans        &trans     &trans       &trans     &kp N7        &kp N8        &kp N9        &bt BT_SEL 2  &bt BT_CLR
+                             &kp LGUI      &trans     &kp ENTER    &kp SPACE  &trans        &kp RALT
             >;
         };
     };
