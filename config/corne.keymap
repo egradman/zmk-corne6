@@ -56,5 +56,23 @@
                                                        &kp LGUI      &trans             &kp ENTER       &kp SPACE  &trans        &trans
             >;
         };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans     &kp LC(K)  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LC(H)  &kp LC(J)  &kp LC(L)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans     &trans     &trans    &trans  &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        tri-layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
     };
 };
