@@ -37,12 +37,12 @@
 
         right_reset {
             bindings = <&bootloader>;
-            key-positions = <40 41 39 11>;
+            key-positions = <40 39 10>;
         };
 
         left_reset {
             bindings = <&bootloader>;
-            key-positions = <36 37 38 0>;
+            key-positions = <37 38 1>;
         };
 
         tab {
