@@ -62,10 +62,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q             &kp W               &kp E           &kp R                    &kp T          &kp Y        &kp U                        &kp I                &kp O                  &kp P                 &kp BSPC
-&kp ESC    &kp A             &kp S               &kp D           &kp F                    &kp G          &kp H        &kp J                        &kp K                &kp L                  &kp SEMI              &kp SQT
-&kp LSHFT  &mt LEFT_SHIFT Z  &mt LEFT_CONTROL X  &mt LEFT_ALT C  &mt LEFT_COMMAND V       &kp B          &kp N        &mt RIGHT_COMMAND M          &mt RIGHT_ALT COMMA  &mt RIGHT_CONTROL DOT  &mt RIGHT_SHIFT FSLH  &kp RIGHT_SHIFT
-                                                 &kp LGUI        &mt LEFT_COMMAND ESCAPE  &lt 1 SPACE    &lt 2 ENTER  &mt RIGHT_CONTROL BACKSPACE  &kp RCTRL
+&trans  &kp Q             &kp W               &kp E           &kp R                    &kp T          &kp Y        &kp U                        &kp I                &kp O                  &kp P                 &trans
+&trans  &kp A             &kp S               &kp D           &kp F                    &kp G          &kp H        &kp J                        &kp K                &kp L                  &kp SEMI              &trans
+&trans  &mt LEFT_SHIFT Z  &mt LEFT_CONTROL X  &mt LEFT_ALT C  &mt LEFT_COMMAND V       &kp B          &kp N        &mt RIGHT_COMMAND M          &mt RIGHT_ALT COMMA  &mt RIGHT_CONTROL DOT  &mt RIGHT_SHIFT FSLH  &trans
+                                              &kp LGUI        &mt LEFT_COMMAND ESCAPE  &lt 1 SPACE    &lt 2 ENTER  &mt RIGHT_CONTROL BACKSPACE  &kp RCTRL
             >;
         };
 
@@ -77,10 +77,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS   &kp LPAR  &kp RPAR  &kp UNDER  &kp BSPC
-&kp F1   &kp F2    &kp F3  &kp F4    &kp F5    &kp F6       &kp MINUS     &kp PLUS   &kp LBKT  &kp RBKT  &kp BSLH   &kp GRAVE
-&kp F7   &kp F8    &kp F9  &kp F10   &kp F11   &kp F12      &kp ASTERISK  &kp EQUAL  &kp LBRC  &kp RBRC  &kp PIPE   &kp TILDE
-                           &trans    &trans    &trans       &trans        &trans     &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS          &kp LPAR  &kp RPAR  &kp UNDER         &trans
+&trans  &kp F2    &kp F3  &kp F4    &kp F5    &kp F6       &kp MINUS  &kp SINGLE_QUOTE  &kp LBKT  &kp RBKT  &kp SINGLE_QUOTE  &trans
+&trans  &kp F8    &kp F9  &kp F10   &kp F11   &kp F12      &kp SLASH  &kp EQUAL         &kp LBRC  &kp RBRC  &kp PIPE          &trans
+                          &trans    &trans    &trans       &trans     &trans            &trans
             >;
         };
 
@@ -92,19 +92,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp UP_ARROW  &kp PAGE_UP    &trans    &trans  &kp N1  &kp N2  &kp N3  &trans         &kp BSPC
-&trans     &trans                &kp LEFT              &kp DOWN      &kp RIGHT      &trans    &trans  &kp N4  &kp N5  &kp N6  &kp N0         &trans
-&kp LSHFT  &kp K_VOLUME_DOWN     &kp K_VOLUME_UP       &trans        &kp PAGE_DOWN  &trans    &trans  &kp N7  &kp N8  &kp N9  &kp BACKSLASH  &trans
-                                                       &trans        &trans         &trans    &trans  &trans  &trans
+&trans  &kp TILDE  &trans    &kp UP_ARROW  &kp PAGE_UP    &trans    &kp N0     &kp N1  &kp N2  &kp N3  &trans         &trans
+&trans  &trans     &kp LEFT  &kp DOWN      &kp RIGHT      &trans    &kp PLUS   &kp N4  &kp N5  &kp N6  &trans         &trans
+&trans  &trans     &trans    &trans        &kp PAGE_DOWN  &trans    &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp BACKSLASH  &trans
+                             &trans        &trans         &trans    &trans     &trans  &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 3    &trans            &kp LC(K)     &trans            &trans    &trans  &moom_left         &moom_full     &moom_right        &trans           &trans
-&bt BT_SEL 1  &bt BT_SEL 4    &kp LC(H)         &kp LC(J)     &kp LC(L)         &trans    &trans  &trans             &trans         &trans             &trans           &trans
-&bt BT_SEL 2  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &trans    &trans  &sk RIGHT_COMMAND  &sk RIGHT_ALT  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT  &bt BT_CLR
-                                                &trans        &trans            &trans    &trans  &trans             &trans
+&trans  &kp C_BRIGHTNESS_INC  &trans            &kp LC(K)     &trans            &bt BT_SEL 0    &bt BT_SEL 3  &moom_left         &moom_full     &moom_right        &kp C_VOLUME_UP    &trans
+&trans  &kp C_BRIGHTNESS_DEC  &kp LC(H)         &kp LC(J)     &kp LC(L)         &bt BT_SEL 1    &bt BT_SEL 4  &trans             &trans         &trans             &kp C_VOLUME_DOWN  &trans
+&trans  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &bt BT_SEL 2    &bt BT_CLR    &sk RIGHT_COMMAND  &sk RIGHT_ALT  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT    &trans
+                                                &trans        &trans            &trans          &trans        &trans             &trans
             >;
         };
     };
