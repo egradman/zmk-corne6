@@ -62,10 +62,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q             &kp W               &kp E           &kp R               &kp T          &kp Y        &kp U                &kp I                &kp O                  &kp P                 &trans
-&trans  &kp A             &kp S               &kp D           &kp F               &kp G          &kp H        &kp J                &kp K                &kp L                  &kp SEMI              &trans
-&trans  &mt LEFT_SHIFT Z  &mt LEFT_CONTROL X  &mt LEFT_ALT C  &mt LEFT_COMMAND V  &kp B          &kp N        &mt RIGHT_COMMAND M  &mt RIGHT_ALT COMMA  &mt RIGHT_CONTROL DOT  &mt RIGHT_SHIFT FSLH  &trans
-                                              &trans          &kp ESCAPE          &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE        &trans
+&trans  &kp Q             &kp W               &kp E           &kp R               &kp T                 &kp Y                &kp U                &kp I                &kp O                  &kp P                 &trans
+&trans  &kp A             &kp S               &kp D           &kp F               &kp G                 &kp H                &kp J                &kp K                &kp L                  &kp SEMI              &trans
+&trans  &mt LEFT_SHIFT Z  &mt LEFT_CONTROL X  &mt LEFT_ALT C  &mt LEFT_COMMAND V  &mt LEFT_CONTROL B    &mt RIGHT_CONTROL N  &mt RIGHT_COMMAND M  &mt RIGHT_ALT COMMA  &mt RIGHT_CONTROL DOT  &mt RIGHT_SHIFT FSLH  &trans
+                                              &trans          &kp ESCAPE          &lt 1 SPACE           &lt 2 ENTER          &kp BACKSPACE        &trans
             >;
         };
 
@@ -77,10 +77,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp GRAVE  &trans  &trans   &trans   &kp TAB    &trans    &trans                &trans    &trans          &kp MINUS         &trans
-&trans  &kp F1     &kp F2  &kp F3   &kp F4   &kp F5     &kp PLUS  &kp LEFT_PARENTHESIS  &kp LBKT  &kp LEFT_BRACE  &kp SINGLE_QUOTE  &trans
-&trans  &kp F8     &kp F9  &kp F10  &kp F11  &kp F12    &trans    &trans                &trans    &trans          &kp PIPE          &trans
-                           &trans   &trans   &trans     &trans    &trans                &trans
+&trans  &kp GRAVE  &trans  &trans   &trans   &kp TAB    &kp MINUS  &trans                &trans    &trans          &kp MINUS         &trans
+&trans  &kp F1     &kp F2  &kp F3   &kp F4   &kp F5     &kp PLUS   &kp LEFT_PARENTHESIS  &kp LBKT  &kp LEFT_BRACE  &kp SINGLE_QUOTE  &trans
+&trans  &kp F8     &kp F9  &kp F10  &kp F11  &kp F12    &trans     &trans                &trans    &trans          &kp PIPE          &trans
+                           &trans   &trans   &trans     &trans     &trans                &trans
             >;
         };
 
