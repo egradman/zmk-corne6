@@ -77,10 +77,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp MINUS         &trans
-&trans  &kp F1    &kp F2  &kp F3    &kp F4    &kp F5       &kp PLUS   &trans     &kp LBKT  &kp RBKT  &kp SINGLE_QUOTE  &trans
-&trans  &kp F8    &kp F9  &kp F10   &kp F11   &kp F12      &trans     &kp EQUAL  &kp LBRC  &kp RBRC  &kp PIPE          &trans
-                          &trans    &trans    &trans       &trans     &trans     &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS              &trans    &trans          &kp MINUS         &trans
+&trans  &kp F1    &kp F2  &kp F3    &kp F4    &kp F5       &kp PLUS   &kp LEFT_PARENTHESIS  &kp LBKT  &kp LEFT_BRACE  &kp SINGLE_QUOTE  &trans
+&trans  &kp F8    &kp F9  &kp F10   &kp F11   &kp F12      &trans     &kp EQUAL             &trans    &trans          &kp PIPE          &trans
+                          &trans    &trans    &trans       &trans     &trans                &trans
             >;
         };
 
@@ -101,10 +101,10 @@
 
         layer_3 {
             bindings = <
-&trans  &kp C_BRIGHTNESS_INC  &trans            &kp LC(K)     &trans            &bt BT_SEL 0    &bt BT_SEL 3  &moom_left         &moom_full     &moom_right        &kp C_VOLUME_UP    &trans
-&trans  &kp C_BRIGHTNESS_DEC  &kp LC(H)         &kp LC(J)     &kp LC(L)         &bt BT_SEL 1    &bt BT_SEL 4  &trans             &trans         &trans             &kp C_VOLUME_DOWN  &trans
-&trans  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &bt BT_SEL 2    &bt BT_CLR    &sk RIGHT_COMMAND  &sk RIGHT_ALT  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT    &trans
-                                                &trans        &trans            &trans          &trans        &trans             &trans
+&trans  &kp C_BRIGHTNESS_INC  &trans            &kp LC(K)     &trans            &bt BT_SEL 0    &bt BT_SEL 3  &moom_left             &moom_full         &moom_right        &kp C_VOLUME_UP    &trans
+&trans  &kp C_BRIGHTNESS_DEC  &kp LC(H)         &kp LC(J)     &kp LC(L)         &bt BT_SEL 1    &bt BT_SEL 4  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE    &kp C_VOLUME_DOWN  &trans
+&trans  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &bt BT_SEL 2    &bt BT_CLR    &sk RIGHT_COMMAND      &sk RIGHT_ALT      &sk RIGHT_CONTROL  &sk RIGHT_SHIFT    &trans
+                                                &trans        &trans            &trans          &trans        &trans                 &trans
             >;
         };
     };
