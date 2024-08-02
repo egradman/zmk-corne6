@@ -4,12 +4,11 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <behaviors.dtsi>
 #include "zmk-helpers/helper.h"
+#include "timeless.h"
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-
-#include "timeless.h"
 
 / {
     macros {
@@ -65,10 +64,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q             &kp W               &kp E           &kp R               &kp T                 &kp Y                &kp U                &kp I                &kp O                  &kp P                 &trans
-&trans  &kp A             &kp S               &kp D           &kp F               &kp G                 &kp H                &kp J                &kp K                &kp L                  &kp SEMI              &trans
-&trans  &mt LEFT_SHIFT Z  &mt LEFT_CONTROL X  &mt LEFT_ALT C  &mt LEFT_COMMAND V  &mt LEFT_CONTROL B    &mt RIGHT_CONTROL N  &mt RIGHT_COMMAND M  &mt RIGHT_ALT COMMA  &mt RIGHT_CONTROL DOT  &mt RIGHT_SHIFT FSLH  &trans
-                                              &trans          &kp ESCAPE          &lt 1 SPACE           &lt 2 ENTER          &kp BACKSPACE        &trans
+&trans  &kp Q             &kp W               &kp E             &kp R               &kp T                 &kp Y                &kp U                &kp I                &kp O                  &kp P                 &trans
+&trans  &kp A             &kp S               &kp D             &kp F               &kp G                 &kp H                &kp J                &kp K                &kp L                  &kp SEMI              &trans
+&trans  &mt LEFT_SHIFT Z  &mt LEFT_CONTROL X  &mt LEFT_ALT C    &mt LEFT_COMMAND V  &mt LEFT_CONTROL B    &mt RIGHT_CONTROL N  &mt RIGHT_COMMAND M  &mt RIGHT_ALT COMMA  &mt RIGHT_CONTROL DOT  &mt RIGHT_SHIFT FSLH  &trans
+                                              &sk LEFT_CONTROL  &kp ESCAPE          &lt 1 SPACE           &lt 2 ENTER          &kp BACKSPACE        &sk RIGHT_SHIFT
             >;
         };
 
