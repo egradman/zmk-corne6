@@ -85,10 +85,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp GRAVE  &trans  &kp MINUS  &trans   &kp TAB    &kp MINUS  &trans                &trans    &trans          &trans            &trans
-&trans  &kp F1     &kp F2  &kp F3     &kp F4   &kp F5     &kp PLUS   &kp LEFT_PARENTHESIS  &kp LBKT  &kp LEFT_BRACE  &kp SINGLE_QUOTE  &trans
-&trans  &kp F8     &kp F9  &kp F10    &kp F11  &kp F12    &trans     &trans                &trans    &trans          &kp PIPE          &trans
-                           &trans     &trans   &trans     &trans     &trans                &trans
+&trans  &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp MINUS  &kp TAB    &trans    &trans                 &trans             &trans           &trans    &trans
+&trans  &kp F1     &kp F2            &kp F3             &kp F4     &kp F5     &kp PLUS  &kp LEFT_PARENTHESIS   &kp LBKT           &kp LEFT_BRACE   &trans    &trans
+&trans  &kp F8     &kp F9            &kp F10            &kp F11    &kp F12    &trans    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp PIPE  &trans
+                                     &trans             &trans     &trans     &trans    &trans                 &trans
             >;
         };
 
@@ -100,19 +100,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp TILDE  &trans    &kp UP_ARROW  &kp PAGE_UP    &kp TAB    &kp N0     &kp N1  &kp N2  &kp N3  &kp UNDER          &trans
-&trans  &kp LG(C)  &kp LEFT  &kp DOWN      &kp RIGHT      &trans     &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp DOUBLE_QUOTES  &trans
-&trans  &kp LG(V)  &trans    &trans        &kp PAGE_DOWN  &trans     &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp BACKSLASH      &trans
+&trans  &kp TILDE  &trans    &kp UP_ARROW  &kp PAGE_UP    &kp TAB    &kp N0     &kp N1  &kp N2  &kp N3  &kp UNDER      &trans
+&trans  &kp LG(C)  &kp LEFT  &kp DOWN      &kp RIGHT      &trans     &kp EQUAL  &kp N4  &kp N5  &kp N6  &trans         &trans
+&trans  &kp LG(V)  &trans    &trans        &kp PAGE_DOWN  &trans     &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp BACKSLASH  &trans
                              &trans        &trans         &trans     &trans     &trans  &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &kp C_BRIGHTNESS_INC  &trans            &kp LC(K)     &trans            &bt BT_SEL 0    &bt BT_SEL 3  &moom_left             &moom_full         &moom_right        &kp C_VOLUME_UP    &trans
-&trans  &kp C_BRIGHTNESS_DEC  &kp LC(H)         &kp LC(J)     &kp LC(L)         &bt BT_SEL 1    &bt BT_SEL 4  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE    &kp C_VOLUME_DOWN  &trans
-&trans  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &bt BT_SEL 2    &bt BT_CLR    &sk RIGHT_COMMAND      &sk RIGHT_ALT      &sk RIGHT_CONTROL  &sk RIGHT_SHIFT    &trans
-                                                &trans        &trans            &trans          &trans        &trans                 &trans
+&trans  &kp C_BRIGHTNESS_INC  &trans            &kp LC(K)     &trans            &bt BT_SEL 0    &bt BT_SEL 3  &moom_left         &moom_full     &moom_right        &kp C_VOLUME_UP    &trans
+&trans  &kp C_BRIGHTNESS_DEC  &kp LC(H)         &kp LC(J)     &kp LC(L)         &bt BT_SEL 1    &bt BT_SEL 4  &trans             &trans         &trans             &kp C_VOLUME_DOWN  &trans
+&trans  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &bt BT_SEL 2    &bt BT_CLR    &sk RIGHT_COMMAND  &sk RIGHT_ALT  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT    &trans
+                                                &trans        &trans            &trans          &trans        &trans             &trans
             >;
         };
     };
