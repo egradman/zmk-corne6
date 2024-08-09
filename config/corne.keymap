@@ -99,9 +99,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp MINUS  &kp TAB    &trans        &trans                 &trans             &trans           &trans     &trans
-&trans  &kp F1     &kp F2            &kp F3             &kp F4     &kp F5     &kp PLUS      &kp LEFT_PARENTHESIS   &kp LBKT           &kp LEFT_BRACE   &kp MINUS  &trans
-&trans  &kp F8     &kp F9            &kp F10            &kp F11    &kp F12    &kp ASTERISK  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp PIPE   &trans
+&trans  &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp MINUS  &kp TAB    &trans        &trans                 &trans             &trans           &kp PERIOD  &trans
+&trans  &kp F1     &kp F2            &kp F3             &kp F4     &kp F5     &kp PLUS      &kp LEFT_PARENTHESIS   &kp LBKT           &kp LEFT_BRACE   &kp MINUS   &trans
+&trans  &kp F8     &kp F9            &kp F10            &kp F11    &kp F12    &kp ASTERISK  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp PIPE    &trans
                                      &trans             &trans     &trans     &trans        &trans                 &trans
             >;
         };
