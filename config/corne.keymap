@@ -124,6 +124,15 @@
                                                 &trans        &trans            &trans          &trans        &trans             &trans
             >;
         };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N0        &kp N1  &kp N2  &kp N3  &kp PERIOD  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS      &kp N4  &kp N5  &kp N6  &kp MINUS   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp SLASH   &trans
+                        &trans  &trans  &trans    &trans        &trans  &trans
+            >;
+        };
     };
 
     conditional_layers {
