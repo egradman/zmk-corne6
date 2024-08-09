@@ -57,6 +57,11 @@
             bindings = <&kp TAB>;
             key-positions = <37 38>;
         };
+
+        numlayer {
+            bindings = <&mo 4>;
+            key-positions = <16 17>;
+        };
     };
 
     behaviors {
