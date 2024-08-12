@@ -55,7 +55,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <37 38>;
+            key-positions = <16 15>;
         };
 
         numlayer {
