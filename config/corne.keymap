@@ -59,7 +59,7 @@
         };
 
         numlayer {
-            bindings = <&mo 4>;
+            bindings = <&sl 4>;
             key-positions = <13 14>;
         };
     };
