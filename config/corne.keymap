@@ -55,7 +55,26 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <37 38>;
+            key-positions = <16 15>;
+        };
+
+        numlayer {
+            bindings = <&sl 4>;
+            key-positions = <14 15>;
+        };
+
+        tab2 {
+            bindings = <&kp TAB>;
+            key-positions = <19 20>;
+        };
+    };
+
+    behaviors {
+        thumb_0: thumb_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "THUMB_0";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_CONTROL>, <&kp LC(B)>;
         };
     };
 
@@ -70,10 +89,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q              &kp W                &kp E             &kp R                &kp T                  &kp Y                 &kp U                 &kp I                 &kp O                   &kp P                  &trans
-&trans  &kp A              &kp S                &kp D             &kp F                &kp G                  &kp H                 &kp J                 &kp K                 &kp L                   &kp SEMI               &trans
-&trans  &hml LEFT_SHIFT Z  &hml LEFT_CONTROL X  &hml LEFT_ALT C   &hml LEFT_COMMAND V  &hml LEFT_CONTROL B    &hmr RIGHT_CONTROL N  &hmr RIGHT_COMMAND M  &hmr RIGHT_ALT COMMA  &hmr RIGHT_CONTROL DOT  &hmr RIGHT_SHIFT FSLH  &trans
-                                                &sk LEFT_CONTROL  &kp ESCAPE           &lt 1 SPACE            &lt 2 ENTER           &kp BACKSPACE         &sk RIGHT_SHIFT
+&none  &kp Q              &kp W                &kp E            &kp R                &kp T                  &kp Y                 &kp U                 &kp I                 &kp O                   &kp P                  &none
+&none  &kp A              &kp S                &kp D            &kp F                &kp G                  &kp H                 &kp J                 &kp K                 &kp L                   &kp SEMI               &none
+&none  &hml LEFT_SHIFT Z  &hml LEFT_CONTROL X  &hml LEFT_ALT C  &hml LEFT_COMMAND V  &hml LEFT_CONTROL B    &hmr RIGHT_CONTROL N  &hmr RIGHT_COMMAND M  &hmr RIGHT_ALT COMMA  &hmr RIGHT_CONTROL DOT  &hmr RIGHT_SHIFT FSLH  &none
+                                               &thumb_0         &kp ESCAPE           &lt 1 SPACE            &lt 2 ENTER           &kp BACKSPACE         &sk RIGHT_SHIFT
             >;
         };
 
@@ -85,10 +104,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp GRAVE  &trans  &kp MINUS  &trans   &kp TAB    &kp MINUS  &trans                &trans    &trans          &trans            &trans
-&trans  &kp F1     &kp F2  &kp F3     &kp F4   &kp F5     &kp PLUS   &kp LEFT_PARENTHESIS  &kp LBKT  &kp LEFT_BRACE  &kp SINGLE_QUOTE  &trans
-&trans  &kp F8     &kp F9  &kp F10    &kp F11  &kp F12    &trans     &trans                &trans    &trans          &kp PIPE          &trans
-                           &trans     &trans   &trans     &trans     &trans                &trans
+&trans  &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp MINUS  &kp TAB    &kp HASH      &kp EXCL               &kp AT             &kp HASH         &kp PERIOD        &trans
+&trans  &kp F1     &kp F2            &kp F3             &kp F4     &kp F5     &kp PLUS      &kp LEFT_PARENTHESIS   &kp LBKT           &kp LEFT_BRACE   &kp LESS_THAN     &trans
+&trans  &kp F8     &kp F9            &kp F10            &kp F11    &kp F12    &kp ASTERISK  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &trans
+                                     &trans             &trans     &trans     &trans        &trans                 &trans
             >;
         };
 
@@ -100,19 +119,28 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp TILDE  &trans    &kp UP_ARROW  &kp PAGE_UP    &kp TAB    &kp N0     &kp N1  &kp N2  &kp N3  &kp UNDER          &trans
-&trans  &kp LG(C)  &kp LEFT  &kp DOWN      &kp RIGHT      &trans     &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp DOUBLE_QUOTES  &trans
-&trans  &kp LG(V)  &trans    &trans        &kp PAGE_DOWN  &trans     &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp BACKSLASH      &trans
+&trans  &kp TILDE  &trans    &kp UP_ARROW  &kp PAGE_UP    &kp TAB    &kp N0     &kp N1  &kp N2  &kp N3  &kp UNDER      &trans
+&trans  &kp LG(C)  &kp LEFT  &kp DOWN      &kp RIGHT      &trans     &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp PIPE       &trans
+&trans  &kp LG(V)  &trans    &trans        &kp PAGE_DOWN  &trans     &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp BACKSLASH  &trans
                              &trans        &trans         &trans     &trans     &trans  &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &kp C_BRIGHTNESS_INC  &trans            &kp LC(K)     &trans            &bt BT_SEL 0    &bt BT_SEL 3  &moom_left             &moom_full         &moom_right        &kp C_VOLUME_UP    &trans
-&trans  &kp C_BRIGHTNESS_DEC  &kp LC(H)         &kp LC(J)     &kp LC(L)         &bt BT_SEL 1    &bt BT_SEL 4  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE    &kp C_VOLUME_DOWN  &trans
-&trans  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &bt BT_SEL 2    &bt BT_CLR    &sk RIGHT_COMMAND      &sk RIGHT_ALT      &sk RIGHT_CONTROL  &sk RIGHT_SHIFT    &trans
-                                                &trans        &trans            &trans          &trans        &trans                 &trans
+&trans  &kp C_BRIGHTNESS_INC  &trans            &kp LC(K)     &trans            &bt BT_SEL 0    &bt BT_SEL 3  &moom_left         &moom_full     &moom_right        &kp C_VOLUME_UP    &trans
+&trans  &kp C_BRIGHTNESS_DEC  &kp LC(H)         &kp LC(J)     &kp LC(L)         &bt BT_SEL 1    &bt BT_SEL 4  &trans             &trans         &trans             &kp C_VOLUME_DOWN  &trans
+&trans  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &bt BT_SEL 2    &bt BT_CLR    &sk RIGHT_COMMAND  &sk RIGHT_ALT  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT    &trans
+                                                &trans        &trans            &trans          &trans        &trans             &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans      &trans    &kp N0        &kp N1  &kp N2  &kp N3  &trans     &trans
+&trans  &trans  &trans  &trans  &kp PERIOD  &trans    &kp PLUS      &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
+&trans  &trans  &trans  &trans  &trans      &trans    &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp SLASH  &trans
+                        &trans  &trans      &trans    &trans        &trans  &trans
             >;
         };
     };
