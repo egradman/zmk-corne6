@@ -7,6 +7,7 @@ authors = [
 ]
 dependencies = [
     "pyparsing>=3.1.2",
+    "keymap-drawer>=0.18.0",
 ]
 requires-python = "==3.12.*"
 readme = "README.md"
