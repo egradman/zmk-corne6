@@ -60,7 +60,12 @@
 
         numlayer {
             bindings = <&sl 4>;
-            key-positions = <13 14>;
+            key-positions = <14 15>;
+        };
+
+        tab2 {
+            bindings = <&kp TAB>;
+            key-positions = <19 20>;
         };
     };
 
