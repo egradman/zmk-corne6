@@ -67,6 +67,11 @@
             bindings = <&kp TAB>;
             key-positions = <19 20>;
         };
+
+        homerow_hyperspace {
+            bindings = <&kp LS(LA(LC(LG(SPACE))))>;
+            key-positions = <37 40>;
+        };
     };
 
     behaviors {
