@@ -109,10 +109,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp MINUS  &kp TAB    &kp HASH      &kp EXCL               &kp AT             &kp HASH         &kp PERIOD        &trans
-&trans  &kp F1     &kp F2            &kp F3             &kp F4     &kp F5     &kp PLUS      &kp LEFT_PARENTHESIS   &kp LBKT           &kp LEFT_BRACE   &kp LESS_THAN     &trans
-&trans  &kp F8     &kp F9            &kp F10            &kp F11    &kp F12    &kp ASTERISK  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &trans
-                                     &trans             &trans     &trans     &trans        &trans                 &trans
+&trans  &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp MINUS  &kp TAB    &trans  &trans                 &trans             &trans           &trans            &trans
+&trans  &kp F1     &kp F2            &kp F3             &kp F4     &kp F5     &trans  &kp LEFT_PARENTHESIS   &kp LBKT           &kp LEFT_BRACE   &kp LESS_THAN     &trans
+&trans  &kp F8     &kp F9            &kp F10            &kp F11    &kp F12    &trans  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &trans
+                                     &trans             &trans     &trans     &trans  &trans                 &trans
             >;
         };
 
@@ -124,10 +124,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp TILDE  &trans    &kp UP_ARROW  &kp PAGE_UP    &kp TAB    &kp N0     &kp N1  &kp N2  &kp N3  &kp UNDER      &trans
-&trans  &kp LG(C)  &kp LEFT  &kp DOWN      &kp RIGHT      &trans     &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp PIPE       &trans
-&trans  &kp LG(V)  &trans    &trans        &kp PAGE_DOWN  &trans     &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp BACKSLASH  &trans
-                             &trans        &trans         &trans     &trans     &trans  &trans
+&trans  &kp TILDE  &kp LG(EQUAL)  &kp UP_ARROW  &kp PAGE_UP    &kp HOME    &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER      &trans
+&trans  &kp LG(C)  &kp LEFT       &kp DOWN      &kp RIGHT      &trans      &kp PLUS   &kp DOLLAR     &kp PERCENT  &kp CARET  &kp STAR       &trans
+&trans  &kp LG(V)  &kp LG(MINUS)  &kp END       &kp PAGE_DOWN  &trans      &kp MINUS  &kp AMPERSAND  &kp STAR     &kp PIPE   &kp BACKSLASH  &trans
+                                  &trans        &trans         &trans      &trans     &trans         &trans
             >;
         };
 
@@ -142,10 +142,19 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans      &trans    &kp N0        &kp N1  &kp N2  &kp N3  &trans     &trans
-&trans  &trans  &trans  &trans  &kp PERIOD  &trans    &kp PLUS      &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
-&trans  &trans  &trans  &trans  &trans      &trans    &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp SLASH  &trans
-                        &trans  &trans      &trans    &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans      &trans    &kp N0     &kp N1  &kp N2  &kp N3  &trans     &trans
+&trans  &trans  &trans  &trans  &kp PERIOD  &trans    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp STAR   &trans
+&trans  &trans  &trans  &trans  &trans      &trans    &kp MINUS  &kp N7  &kp N8  &kp N9  &kp SLASH  &trans
+                        &trans  &trans      &trans    &trans     &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
