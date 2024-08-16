@@ -84,7 +84,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "THUMB_0";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_CONTROL>, <&kp LC(B)>;
+            bindings = <&sk LEFT_SHIFT>, <&kp LC(B)>;
         };
     };
 
