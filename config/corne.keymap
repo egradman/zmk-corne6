@@ -138,10 +138,10 @@
 
         layer_3 {
             bindings = <
-&trans  &kp C_BRIGHTNESS_INC  &trans            &kp LC(K)     &trans            &bt BT_SEL 0    &bt BT_SEL 3  &moom_left         &moom_full     &moom_right        &kp C_VOLUME_UP    &trans
-&trans  &kp C_BRIGHTNESS_DEC  &kp LC(H)         &kp LC(J)     &kp LC(L)         &bt BT_SEL 1    &bt BT_SEL 4  &trans             &trans         &trans             &kp C_VOLUME_DOWN  &trans
-&trans  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &bt BT_SEL 2    &bt BT_CLR    &sk RIGHT_COMMAND  &sk RIGHT_ALT  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT    &trans
-                                                &trans        &trans            &trans          &trans        &trans             &trans
+&trans  &kp C_BRIGHTNESS_INC  &trans            &kp LC(K)     &trans            &bt BT_SEL 0    &bt BT_SEL 3  &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(SPACE)))  &kp LA(LC(LG(RIGHT)))  &kp C_VOLUME_UP    &trans
+&trans  &kp C_BRIGHTNESS_DEC  &kp LC(H)         &kp LC(J)     &kp LC(L)         &bt BT_SEL 1    &bt BT_SEL 4  &trans                &trans                 &trans                 &kp C_VOLUME_DOWN  &trans
+&trans  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &bt BT_SEL 2    &bt BT_CLR    &sk RIGHT_COMMAND     &sk RIGHT_ALT          &sk RIGHT_CONTROL      &sk RIGHT_SHIFT    &trans
+                                                &trans        &trans            &trans          &trans        &trans                &trans
             >;
         };
 
@@ -151,15 +151,6 @@
 &trans  &trans  &trans  &trans  &kp PERIOD  &trans    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp STAR   &trans
 &trans  &trans  &trans  &trans  &trans      &trans    &kp MINUS  &kp N7  &kp N8  &kp N9  &kp SLASH  &trans
                         &trans  &trans      &trans    &kp N0     &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
