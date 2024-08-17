@@ -43,24 +43,9 @@
     combos {
         compatible = "zmk,combos";
 
-        right_reset {
-            bindings = <&bootloader>;
-            key-positions = <40 39 10>;
-        };
-
-        left_reset {
-            bindings = <&bootloader>;
-            key-positions = <37 38 1>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <16 15>;
-        };
-
         numlayer {
             bindings = <&sl 4>;
-            key-positions = <14 15>;
+            key-positions = <15 16>;
         };
 
         tab2 {
@@ -147,10 +132,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans      &trans    &kp N0     &kp N1  &kp N2  &kp N3  &trans     &trans
-&trans  &trans  &trans  &trans  &kp PERIOD  &trans    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp STAR   &trans
-&trans  &trans  &trans  &trans  &trans      &trans    &kp MINUS  &kp N7  &kp N8  &kp N9  &kp SLASH  &trans
-                        &trans  &trans      &trans    &kp N0     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N0     &kp N1  &kp N2  &kp N3  &kp PERIOD  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp STAR    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp N7  &kp N8  &kp N9  &kp SLASH   &trans
+                        &trans  &trans  &trans    &kp N0     &trans  &trans
             >;
         };
     };
