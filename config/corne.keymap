@@ -71,6 +71,13 @@
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&kp LC(B)>;
         };
+
+        thumb_2: thumb_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "THUMB_2";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_SHIFT>, <&sk LEFT_GUI>;
+        };
     };
 
     keymap {
