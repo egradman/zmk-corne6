@@ -72,11 +72,21 @@
             bindings = <&sk LEFT_SHIFT>, <&kp LC(B)>;
         };
 
-        thumb_2: thumb_2 {
+        thumb_1: thumb_1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "THUMB_2";
+            label = "THUMB_1";
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&sk LEFT_GUI>;
+        };
+
+        paren: paren {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PAREN";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -94,7 +104,7 @@
 &none  &kp Q              &kp W                &kp E            &kp R                &kp T                  &kp Y                 &kp U                 &kp I                 &kp O                   &kp P                  &none
 &none  &kp A              &kp S                &kp D            &kp F                &kp G                  &kp H                 &kp J                 &kp K                 &kp L                   &kp SEMI               &none
 &none  &hml LEFT_SHIFT Z  &hml LEFT_CONTROL X  &hml LEFT_ALT C  &hml LEFT_COMMAND V  &hml LEFT_CONTROL B    &hmr RIGHT_CONTROL N  &hmr RIGHT_COMMAND M  &hmr RIGHT_ALT COMMA  &hmr RIGHT_CONTROL DOT  &hmr RIGHT_SHIFT FSLH  &none
-                                               &thumb_0         &kp ESCAPE           &lt 1 SPACE            &lt 2 ENTER           &kp BACKSPACE         &sk RIGHT_SHIFT
+                                               &thumb_0         &kp ESCAPE           &lt 1 SPACE            &lt 2 ENTER           &kp BACKSPACE         &thumb_1
             >;
         };
 
@@ -106,10 +116,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp MINUS  &kp TAB    &kp COLON         &trans                 &trans             &trans           &trans            &trans
-&trans  &kp F1     &kp F2            &kp F3             &kp F4     &kp F5     &kp LESS_THAN     &kp LEFT_PARENTHESIS   &kp LBKT           &kp LEFT_BRACE   &kp LESS_THAN     &trans
-&trans  &kp F8     &kp F9            &kp F10            &kp F11    &kp F12    &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &trans
-                                     &trans             &trans     &trans     &trans            &trans                 &trans
+&trans  &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp MINUS  &kp TAB    &kp COLON                      &trans                                     &trans             &trans                         &trans                         &trans
+&trans  &kp F1     &kp F2            &kp F3             &kp F4     &kp F5     &paren LESS_THAN GREATER_THAN  &paren LEFT_PARENTHESIS RIGHT_PARENTHESIS  &paren LBKT RBKT   &paren LEFT_BRACE RIGHT_BRACE  &paren LESS_THAN GREATER_THAN  &trans
+&trans  &kp F8     &kp F9            &kp F10            &kp F11    &kp F12    &kp GREATER_THAN               &kp RIGHT_PARENTHESIS                      &kp RIGHT_BRACKET  &kp RIGHT_BRACE                &kp GREATER_THAN               &trans
+                                     &trans             &trans     &trans     &trans                         &trans                                     &trans
             >;
         };
 
