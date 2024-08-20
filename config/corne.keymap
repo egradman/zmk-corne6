@@ -123,10 +123,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp MINUS  &kp TAB    &kp COLON                      &trans                                     &trans             &trans                         &trans                         &trans
-&trans  &kp F1     &kp F2            &kp F3             &kp F4     &kp F5     &paren GREATER_THAN LESS_THAN  &paren RIGHT_PARENTHESIS LEFT_PARENTHESIS  &paren RBKT LBKT   &paren RIGHT_BRACE LEFT_BRACE  &paren GREATER_THAN LESS_THAN  &trans
-&trans  &kp F8     &kp F9            &kp F10            &kp F11    &kp F12    &kp GREATER_THAN               &kp RIGHT_PARENTHESIS                      &kp RIGHT_BRACKET  &kp RIGHT_BRACE                &kp GREATER_THAN               &trans
-                                     &trans             &trans     &trans     &trans                         &trans                                     &trans
+&trans  &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans   &kp TAB    &kp COLON                      &trans                                     &trans             &trans                         &trans  &trans
+&trans  &kp F1     &kp F2            &kp F3             &kp F4   &kp F5     &paren GREATER_THAN LESS_THAN  &paren RIGHT_PARENTHESIS LEFT_PARENTHESIS  &paren RBKT LBKT   &paren RIGHT_BRACE LEFT_BRACE  &trans  &trans
+&trans  &kp F8     &kp F9            &kp F10            &kp F11  &kp F12    &kp GREATER_THAN               &kp RIGHT_PARENTHESIS                      &kp RIGHT_BRACKET  &kp RIGHT_BRACE                &trans  &trans
+                                     &trans             &trans   &trans     &trans                         &trans                                     &trans
             >;
         };
 
@@ -138,9 +138,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp TILDE  &kp LG(EQUAL)  &kp UP_ARROW           &kp PAGE_UP    &kp HOME    &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER      &trans
+&trans  &kp LG(X)  &kp LG(EQUAL)  &kp UP_ARROW           &kp PAGE_UP    &kp HOME    &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER      &trans
 &trans  &kp LG(C)  &kp LEFT       &kp DOWN               &kp RIGHT      &trans      &kp PLUS   &kp DOLLAR     &kp PERCENT  &kp CARET  &kp STAR       &trans
-&trans  &kp LG(V)  &kp LG(MINUS)  &kp LS(LA(LC(LG(D))))  &kp PAGE_DOWN  &kp END     &kp MINUS  &kp AMPERSAND  &trans       &kp PIPE   &kp BACKSLASH  &trans
+&trans  &kp LG(V)  &kp LG(MINUS)  &kp LS(LA(LC(LG(D))))  &kp PAGE_DOWN  &kp END     &kp MINUS  &kp AMPERSAND  &kp TILDE    &kp PIPE   &kp BACKSLASH  &trans
                                   &trans                 &trans         &trans      &trans     &trans         &trans
             >;
         };
