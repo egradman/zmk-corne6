@@ -138,10 +138,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp LG(X)  &kp LG(EQUAL)  &kp UP_ARROW           &kp PAGE_UP    &kp HOME     &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER      &trans
-&trans  &kp LG(C)  &kp LEFT       &kp DOWN               &kp RIGHT      &kp LC(B)    &kp PLUS   &kp DOLLAR     &kp PERCENT  &kp CARET  &kp STAR       &trans
-&trans  &kp LG(V)  &kp LG(MINUS)  &kp LS(LA(LC(LG(D))))  &kp PAGE_DOWN  &kp END      &kp MINUS  &kp AMPERSAND  &kp TILDE    &kp PIPE   &kp BACKSLASH  &trans
-                                  &trans                 &trans         &trans       &trans     &trans         &trans
+&trans  &kp LG(X)  &kp LG(EQUAL)  &kp UP_ARROW           &kp PAGE_UP  &kp HOME     &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER      &trans
+&trans  &kp LG(C)  &kp LEFT       &kp DOWN               &kp RIGHT    &trans       &kp PLUS   &kp DOLLAR     &kp PERCENT  &kp CARET  &kp STAR       &trans
+&trans  &kp LG(V)  &kp LG(MINUS)  &kp LS(LA(LC(LG(D))))  &kp LC(V)    &kp LC(B)    &kp MINUS  &kp AMPERSAND  &kp TILDE    &kp PIPE   &kp BACKSLASH  &trans
+                                  &trans                 &trans       &trans       &trans     &trans         &trans
             >;
         };
 
