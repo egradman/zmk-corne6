@@ -5,8 +5,8 @@
  */
 
 #include "zmk-helpers/helper.h"
-#include <behaviors.dtsi>
 #include "behaviours_homerow_mods.dtsi"
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
@@ -49,11 +49,6 @@
             key-positions = <15 16>;
         };
 
-        tab2 {
-            bindings = <&kp TAB>;
-            key-positions = <19 20>;
-        };
-
         homerow_hyperspace {
             bindings = <&kp LS(LA(LC(LG(SPACE))))>;
             key-positions = <37 40>;
@@ -62,6 +57,11 @@
         cmd_space {
             bindings = <&kp LG(SPACE)>;
             key-positions = <17 18>;
+        };
+
+        return {
+            bindings = <&kp RETURN>;
+            key-positions = <21 20>;
         };
     };
 
@@ -89,6 +89,16 @@
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
+
+        alpha_ht: alpha_ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ALPHA_HT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -103,7 +113,7 @@
 
             bindings = <
 &none  &kp Q               &kp W                &kp E            &kp R                &kp T                  &kp Y                 &kp U                 &kp I                 &kp O                   &kp P                    &none
-&none  &kp A               &kp S                &kp D            &kp F                &kp G                  &kp H                 &kp J                 &kp K                 &kp L                   &kp SEMI                 &none
+&none  &kp A               &kp S                &kp D            &kp F                &kp G                  &kp H                 &kp J                 &kp K                 &kp L                   &kp COLON                &none
 &none  &hmsl LEFT_SHIFT Z  &hml LEFT_CONTROL X  &hml LEFT_ALT C  &hml LEFT_COMMAND V  &hml LEFT_CONTROL B    &hmr RIGHT_CONTROL N  &hmr RIGHT_COMMAND M  &hmr RIGHT_ALT COMMA  &hmr RIGHT_CONTROL DOT  &hmsr RIGHT_SHIFT SLASH  &none
                                                 &thumb_0         &kp ESCAPE           &lt 1 SPACE            &lt 2 ENTER           &kp BACKSPACE         &thumb_1
             >;
@@ -117,10 +127,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LC(V)  &kp TAB    &kp COLON                      &trans                                     &trans             &trans                         &trans  &trans
-&trans  &kp F1     &kp F2            &kp F3             &kp F4     &kp F5     &paren GREATER_THAN LESS_THAN  &paren RIGHT_PARENTHESIS LEFT_PARENTHESIS  &paren RBKT LBKT   &paren RIGHT_BRACE LEFT_BRACE  &trans  &trans
-&trans  &kp F8     &kp F9            &kp F10            &kp F11    &kp F12    &kp GREATER_THAN               &kp RIGHT_PARENTHESIS                      &kp RIGHT_BRACKET  &kp RIGHT_BRACE                &trans  &trans
-                                     &trans             &trans     &trans     &trans                         &trans                                     &trans
+&trans  &trans  &alpha_ht GRAVE SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LC(V)  &kp TAB    &kp SEMICOLON                  &trans                                     &trans             &trans                         &trans  &trans
+&trans  &kp F1  &kp F2                        &kp F3             &kp F4     &kp F5     &paren GREATER_THAN LESS_THAN  &paren RIGHT_PARENTHESIS LEFT_PARENTHESIS  &paren RBKT LBKT   &paren RIGHT_BRACE LEFT_BRACE  &trans  &trans
+&trans  &kp F8  &kp F9                        &kp F10            &kp F11    &kp F12    &kp GREATER_THAN               &kp RIGHT_PARENTHESIS                      &kp RIGHT_BRACKET  &kp RIGHT_BRACE                &trans  &trans
+                                              &trans             &trans     &trans     &trans                         &trans                                     &trans
             >;
         };
 
