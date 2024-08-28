@@ -72,7 +72,7 @@
         };
 
         hyper {
-            bindings = <&kp LA(LC(LG(LEFT_SHIFT)))>;
+            bindings = <&sk LA(LC(LG(LEFT_SHIFT)))>;
             key-positions = <36 41>;
         };
     };
