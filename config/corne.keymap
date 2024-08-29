@@ -5,9 +5,8 @@
  */
 
 #include "zmk-helpers/helper.h"
-#include <behaviors.dtsi>
-
 #include "behaviours_homerow_mods.dtsi"
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
@@ -155,19 +154,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp LG(X)  &kp LG(EQUAL)  &kp UP_ARROW           &kp PAGE_UP  &kp HOME     &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER      &trans
-&trans  &kp LG(C)  &kp LEFT       &kp DOWN               &kp RIGHT    &trans       &kp PLUS   &kp DOLLAR     &kp PERCENT  &kp CARET  &kp STAR       &trans
-&trans  &kp LG(V)  &kp LG(MINUS)  &kp LS(LA(LC(LG(D))))  &kp LC(V)    &kp LC(B)    &kp MINUS  &kp AMPERSAND  &kp TILDE    &kp PIPE   &kp BACKSLASH  &trans
-                                  &trans                 &trans       &trans       &trans     &trans         &trans
+&trans  &kp LG(X)  &kp LC(W)  &kp UP_ARROW           &trans     &trans       &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER      &trans
+&trans  &kp LG(C)  &kp LEFT   &kp DOWN               &kp RIGHT  &trans       &kp PLUS   &kp DOLLAR     &kp PERCENT  &kp CARET  &kp STAR       &trans
+&trans  &kp LG(V)  &trans     &kp LS(LA(LC(LG(D))))  &kp LC(V)  &kp LC(B)    &kp MINUS  &kp AMPERSAND  &kp TILDE    &kp PIPE   &kp BACKSLASH  &trans
+                              &trans                 &trans     &trans       &trans     &trans         &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &kp C_BRIGHTNESS_INC  &kp LC(LS(LG(N4)))  &kp LC(K)     &trans            &trans    &trans  &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(SPACE)))  &kp LA(LC(LG(RIGHT)))  &kp C_VOLUME_UP    &trans
-&trans  &kp C_BRIGHTNESS_DEC  &kp LC(H)           &kp LC(J)     &kp LC(L)         &trans    &trans  &trans                &save_vim              &trans                 &kp C_VOLUME_DOWN  &trans
-&trans  &sk LEFT_SHIFT        &sk LEFT_CONTROL    &sk LEFT_ALT  &sk LEFT_COMMAND  &trans    &trans  &trans                &trans                 &trans                 &trans             &trans
-                                                  &trans        &trans            &trans    &trans  &trans                &trans
+&trans  &kp C_BRIGHTNESS_INC  &kp LC(LS(LG(N4)))  &kp LC(K)     &trans            &trans    &trans         &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(SPACE)))  &kp LA(LC(LG(RIGHT)))  &kp C_VOLUME_UP    &trans
+&trans  &kp C_BRIGHTNESS_DEC  &kp LC(H)           &kp LC(J)     &kp LC(L)         &trans    &kp LG(EQUAL)  &trans                &save_vim              &trans                 &kp C_VOLUME_DOWN  &trans
+&trans  &sk LEFT_SHIFT        &sk LEFT_CONTROL    &sk LEFT_ALT  &sk LEFT_COMMAND  &trans    &kp LG(MINUS)  &trans                &trans                 &trans                 &trans             &trans
+                                                  &trans        &trans            &trans    &trans         &trans                &trans
             >;
         };
 
