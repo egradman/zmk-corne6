@@ -281,17 +281,17 @@
             bindings = <
 &trans  &kp C_BRIGHTNESS_INC  &kp LC(LS(LG(N4)))  &kp LC(K)     &trans            &trans    &trans         &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(SPACE)))  &kp LA(LC(LG(RIGHT)))  &kp C_VOLUME_UP    &trans
 &trans  &kp C_BRIGHTNESS_DEC  &kp LC(H)           &kp LC(J)     &kp LC(L)         &trans    &kp LG(EQUAL)  &trans                &save_vim              &trans                 &kp C_VOLUME_DOWN  &trans
-&trans  &sk LEFT_SHIFT        &sk LEFT_CONTROL    &sk LEFT_ALT  &sk LEFT_COMMAND  &trans    &kp LG(MINUS)  &trans                &trans                 &trans                 &trans             &trans
+&trans  &sk LEFT_SHIFT        &sk LEFT_CONTROL    &sk LEFT_ALT  &sk LEFT_COMMAND  &trans    &kp LG(MINUS)  &trans                &trans                 &trans                 &bt BT_CLR_ALL     &trans
                                                   &trans        &trans            &trans    &trans         &trans                &trans
             >;
         };
 
         layer_4 {
             bindings = <
-&trans        &trans        &trans        &trans        &trans        &trans        &kp N0     &kp N1  &kp N2  &kp N3  &kp PERIOD  &trans
-&trans        &trans        &kp LEFT_GUI  &trans        &trans        &trans        &kp PLUS   &kp N4  &kp N5  &kp N6  &kp STAR    &trans
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR    &kp MINUS  &kp N7  &kp N8  &kp N9  &kp SLASH   &trans
-                                          &trans        &trans        &trans        &kp N0     &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans            &kp N0     &kp N1  &kp N2  &kp N3  &kp PERIOD  &trans
+&trans  &trans        &kp LEFT_GUI  &trans        &trans        &trans            &kp PLUS   &kp N4  &kp N5  &kp N6  &kp STAR    &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL    &kp MINUS  &kp N7  &kp N8  &kp N9  &kp SLASH   &trans
+                                    &trans        &trans        &trans            &kp N0     &trans  &trans
             >;
         };
     };
