@@ -198,7 +198,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "THUMB_0";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
+            bindings = <&sl 2>, <&caps_word>;
         };
 
         thumb_1: thumb_1 {
