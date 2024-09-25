@@ -194,7 +194,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <4 5>;
+            key-positions = <4 3>;
         };
     };
 
