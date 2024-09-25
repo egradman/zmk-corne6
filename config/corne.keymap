@@ -191,6 +191,11 @@
             bindings = <&sk LA(LC(LG(LEFT_SHIFT)))>;
             key-positions = <36 41>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <4 5>;
+        };
     };
 
     behaviors {
@@ -255,10 +260,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &kp LA(F4)  &kp TAB    &kp SEMICOLON  &kp LESS_THAN          &kp GREATER_THAN   &kp GRAVE        &kp DOUBLE_QUOTES  &trans
-&trans  &kp F1      &kp F2      &kp F3      &kp F4      &kp F5     &trans         &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp SINGLE_QUOTE   &trans
-&trans  &kp F8      &kp F9      &kp F10     &kp F11     &kp F12    &trans         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans             &trans
-                                &trans      &trans      &trans     &trans         &trans                 &trans
+&trans  &trans  &kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &kp TAB    &kp SEMICOLON  &kp LESS_THAN          &kp GREATER_THAN   &kp GRAVE        &kp SINGLE_QUOTE   &trans
+&trans  &kp F1  &kp F2      &kp F3      &kp F4      &kp F5     &trans         &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp DOUBLE_QUOTES  &trans
+&trans  &kp F8  &kp F9      &kp F10     &kp F11     &kp F12    &trans         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans             &trans
+                            &trans      &trans      &trans     &trans         &trans                 &trans
             >;
         };
 
