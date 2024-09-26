@@ -191,11 +191,6 @@
             bindings = <&sk LA(LC(LG(LEFT_SHIFT)))>;
             key-positions = <36 41>;
         };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <4 3>;
-        };
     };
 
     behaviors {
