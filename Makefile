@@ -7,7 +7,7 @@ image::
 	mogrify -resize x960 output.png
 
 list::
-	gh run list -L 1
+	watch gh run list -L 1
 
 download::
 	rm -rf firmware firmware.zip
