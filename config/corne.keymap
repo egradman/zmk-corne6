@@ -191,6 +191,16 @@
             bindings = <&sk LA(LC(LG(LEFT_SHIFT)))>;
             key-positions = <36 41>;
         };
+
+        left_shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <13 25>;
+        };
+
+        right_shift {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <22 34>;
+        };
     };
 
     behaviors {
